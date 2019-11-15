@@ -23,6 +23,8 @@ public class Path : MonoBehaviour
 
             if(Input.GetKey(KeyCode.UpArrow)){
                 speed=velocity;
+            }else if(Input.GetKey(KeyCode.DownArrow)){
+                speed=velocity* -1;
             }else speed=0;
             Vector3 pos = Vector3.MoveTowards(transform.position , target[current].position , speed*Time.deltaTime);
             GetComponent<Rigidbody>().MovePosition(pos);    
