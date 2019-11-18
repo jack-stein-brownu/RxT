@@ -33,6 +33,13 @@ public class Path : MonoBehaviour
         } //object/waypoint reached, move to the next object 
         else speed=0; //current = ( current + 1) % target.Length;
         Debug.Log(current);
+
+        if(Input.GetKey(KeyCode.E)){
+            ButtonMoveForward();
+        }
+        if(Input.GetKey(KeyCode.Q)){
+            ButtonMoveBackward();
+        }
         
     }
 

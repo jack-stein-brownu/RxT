@@ -24,17 +24,14 @@ public class PlayVideo : MonoBehaviour
         
     }
 
-    /*void OnTriggerStay(Collider other)
-    {
-       Debug.Log("funca");
-    }*/
+    
 
     private void OnTriggerEnter(Collider other)
     {
             Video.Play();
             ButtonPlay.SetActive(false);
             ButtonPause.SetActive(true);
-            CanvasVideoPlayer.SetActive(true);
+            //CanvasVideoPlayer.SetActive(true);
     }
 
     private void OnTriggerExit(Collider other)
@@ -42,6 +39,6 @@ public class PlayVideo : MonoBehaviour
             Video.Stop();
             ButtonPlay.SetActive(true);
             ButtonPause.SetActive(false);
-            CanvasVideoPlayer.SetActive(false);
+            //CanvasVideoPlayer.SetActive(false);
     }
 }
