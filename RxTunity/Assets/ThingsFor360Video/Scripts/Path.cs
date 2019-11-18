@@ -1,10 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Video;
 
 public class Path : MonoBehaviour
 {
     public Transform[] target;
+    public VideoPlayer[] VideoArray;
     private float speed;
     public float velocity;
     private bool ItCanMove;
@@ -22,19 +24,9 @@ public class Path : MonoBehaviour
         
         if(transform.position != target[current].position )
         {
-
-            /*if(Input.GetKey(KeyCode.UpArrow)){
-                speed=velocity;
-            }else if(Input.GetKey(KeyCode.DownArrow)){
-                speed=velocity* -1;
-            }else ;*/
-
-
             Vector3 pos = Vector3.MoveTowards(transform.position , target[current].position , speed*Time.deltaTime);
-            GetComponent<Rigidbody>().MovePosition(pos);    
-            
-            
-            
+            GetComponent<Rigidbody>().MovePosition(pos);
+
         } //object/waypoint reached, move to the next object 
         else speed=0; //current = ( current + 1) % target.Length;
         Debug.Log(current);
