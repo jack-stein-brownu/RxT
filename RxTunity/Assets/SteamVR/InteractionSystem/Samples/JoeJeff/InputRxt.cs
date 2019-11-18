@@ -23,9 +23,13 @@ public class InputRxt : MonoBehaviour
         //hand = interactable;
         Vector2 m = moveAction[hand].axis;
         movement = new Vector3(m.x, 0, m.y);
-        Debug.Log(movement);
+        //Debug.Log(movement);
 
         float rot = transform.eulerAngles.y;
         
+    }
+    public void Text()
+    {
+        Debug.Log("Click");
     }
 }
