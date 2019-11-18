@@ -18,6 +18,7 @@ public class Path : MonoBehaviour
     // Update is called once per frame
     void Update()
     {   //move until you reach the current object/waypoint
+        
         if(transform.position != target[current].position )
         {
 
@@ -25,7 +26,7 @@ public class Path : MonoBehaviour
                 speed=velocity;
             }else if(Input.GetKey(KeyCode.DownArrow)){
                 speed=velocity* -1;
-            }else speed=0;
+            }else ;
 
 
             Vector3 pos = Vector3.MoveTowards(transform.position , target[current].position , speed*Time.deltaTime);
@@ -35,5 +36,21 @@ public class Path : MonoBehaviour
             
         } //object/waypoint reached, move to the next object 
         else current = ( current + 1) % target.Length;
+
+        
+    }
+
+    public void ButtonMoveForward(){
+
+        if(current < target.Length){
+            current= target.Length - 1;
+        }
+
+    }
+
+    public void ButtonMoveBackward(){
+          if(current > 0){
+            current= target.Length - 1;
+        }
     }
 }
