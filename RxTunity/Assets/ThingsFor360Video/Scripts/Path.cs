@@ -7,6 +7,7 @@ public class Path : MonoBehaviour
     public Transform[] target;
     private float speed;
     public float velocity;
+    private bool ItCanMove;
 
     private int current;
     // Start is called before the first frame update
@@ -22,35 +23,45 @@ public class Path : MonoBehaviour
         if(transform.position != target[current].position )
         {
 
-            if(Input.GetKey(KeyCode.UpArrow)){
+            /*if(Input.GetKey(KeyCode.UpArrow)){
                 speed=velocity;
             }else if(Input.GetKey(KeyCode.DownArrow)){
                 speed=velocity* -1;
-            }else ;
+            }else ;*/
 
 
             Vector3 pos = Vector3.MoveTowards(transform.position , target[current].position , speed*Time.deltaTime);
             GetComponent<Rigidbody>().MovePosition(pos);    
-            //transform.rotation = Quaternion.Euler(transform.rotation.x + rotacionX, transform.rotation.y + rotacionY, transform.rotation.z + target[current].rotation.z);
+            
             
             
         } //object/waypoint reached, move to the next object 
-        else current = ( current + 1) % target.Length;
-
+        else speed=0; //current = ( current + 1) % target.Length;
+        Debug.Log(current);
         
     }
 
     public void ButtonMoveForward(){
+        current+=1;
 
         if(current < target.Length){
-            current= target.Length - 1;
+            speed=velocity;
+            
+        }else if(current>=target.Length){
+            current=0;
+            speed=velocity*1;
         }
 
     }
 
     public void ButtonMoveBackward(){
-          if(current > 0){
-            current= target.Length - 1;
+        current-=1;
+
+          if(current >= 0){            
+              speed=velocity*1;
+        }else if(current<0){          
+            current= target.Length-1;
+            speed=velocity*1;
         }
     }
 }
