@@ -32,6 +32,6 @@ public class PlayVideo : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-            Video.Pause();
+            Video.Stop();
     }
 }
