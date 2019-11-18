@@ -26,12 +26,13 @@ public class Path : MonoBehaviour
             }else if(Input.GetKey(KeyCode.DownArrow)){
                 speed=velocity* -1;
             }else speed=0;
+
+
             Vector3 pos = Vector3.MoveTowards(transform.position , target[current].position , speed*Time.deltaTime);
             GetComponent<Rigidbody>().MovePosition(pos);    
+            //transform.rotation = Quaternion.Euler(transform.rotation.x + rotacionX, transform.rotation.y + rotacionY, transform.rotation.z + target[current].rotation.z);
             
-            /*Vector3 origin =
-            transform.right =  (transform - target[current].transform);       
-            transform.LookAt(target[current].transform);*/
+            
         } //object/waypoint reached, move to the next object 
         else current = ( current + 1) % target.Length;
     }
