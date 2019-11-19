@@ -9,8 +9,8 @@ public class Path : MonoBehaviour
     public VideoPlayer[] VideoArray;
     private float speed;
     public float velocity;
-    public GameObject PlayButton;
-    public GameObject PauseButton;
+    //public GameObject PlayButton;
+    //public GameObject PauseButton;
 
     private bool ItCanMove;
 
@@ -18,7 +18,7 @@ public class Path : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        PauseButton.SetActive(false);
+        //PauseButton.SetActive(false);
     }
 
     // Update is called once per frame
@@ -68,15 +68,15 @@ public class Path : MonoBehaviour
     }
 
      public void ButtonPlay(){
-        PlayButton.SetActive(false);
-        PauseButton.SetActive(true);
+        //PlayButton.SetActive(false);
+        //PauseButton.SetActive(true);
         VideoArray[current].Play();
      
     }
 
      public void ButtonPause(){
-        PauseButton.SetActive(false);
-        PlayButton.SetActive(true);
+        //PauseButton.SetActive(false);
+        //PlayButton.SetActive(true);
         VideoArray[current].Pause();
      
     }
