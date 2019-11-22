@@ -261,6 +261,7 @@ MonoBehaviour:
   - {fileID: 251978834}
   - {fileID: 1718923967}
   - {fileID: 2103826919}
+  cylinders: []
   velocity: 50
 --- !u!4 &218087714
 Transform:
@@ -537,7 +538,9 @@ MonoBehaviour:
   - {fileID: 251978834}
   - {fileID: 1718923967}
   - {fileID: 2103826919}
-  velocity: 50
+  cylinders:
+  - {fileID: 743106817}
+  velocity: 15
 --- !u!65 &442913717
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -818,6 +821,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2209995485400303518}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &743106817 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 2b12568581d0317bb9f27c18b313a8f8,
+    type: 3}
+  m_PrefabInstance: {fileID: 1141171158}
+  m_PrefabAsset: {fileID: 0}
 --- !u!328 &850924312 stripped
 VideoPlayer:
   m_CorrespondingSourceObject: {fileID: 6894984239518614579, guid: dc4a1ef0fc9ba176295591a0a26cbf2b,
@@ -1055,10 +1064,40 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: -2397996973257786244, guid: 2b12568581d0317bb9f27c18b313a8f8,
+        type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -2397996973257786244, guid: 2b12568581d0317bb9f27c18b313a8f8,
+        type: 3}
+      propertyPath: m_DynamicOccludee
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -2397996973257786244, guid: 2b12568581d0317bb9f27c18b313a8f8,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1066910053003865102, guid: 2b12568581d0317bb9f27c18b313a8f8,
         type: 3}
       propertyPath: m_ReceiveShadows
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1066910053003865102, guid: 2b12568581d0317bb9f27c18b313a8f8,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: cc2b33befa8d471eebd9ed789b8d313e, type: 2}
+    - target: {fileID: 1066910053003865102, guid: 2b12568581d0317bb9f27c18b313a8f8,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1066910053003865102, guid: 2b12568581d0317bb9f27c18b313a8f8,
+        type: 3}
+      propertyPath: m_DynamicOccludee
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b12568581d0317bb9f27c18b313a8f8, type: 3}
