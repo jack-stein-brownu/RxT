@@ -396,6 +396,12 @@ Camera:
     type: 3}
   m_PrefabInstance: {fileID: 1576465110}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &386406492 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 2b12568581d0317bb9f27c18b313a8f8,
+    type: 3}
+  m_PrefabInstance: {fileID: 1527573058}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &422442670
 GameObject:
   m_ObjectHideFlags: 0
@@ -540,6 +546,9 @@ MonoBehaviour:
   - {fileID: 2103826919}
   cylinders:
   - {fileID: 743106817}
+  - {fileID: 386406492}
+  - {fileID: 1285420019}
+  - {fileID: 1517840292}
   velocity: 15
 --- !u!65 &442913717
 BoxCollider:
@@ -1192,6 +1201,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 70.493004, y: -105.74801, z: -82.796005}
+--- !u!1 &1285420019 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 2b12568581d0317bb9f27c18b313a8f8,
+    type: 3}
+  m_PrefabInstance: {fileID: 1406801385}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1349554135 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 447954, guid: dc06161b6d97feb419f45f03b62e14b9,
@@ -1307,6 +1322,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6894984237828538862, guid: dc4a1ef0fc9ba176295591a0a26cbf2b,
     type: 3}
   m_PrefabInstance: {fileID: 6894984238753683243}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1517840292 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 2b12568581d0317bb9f27c18b313a8f8,
+    type: 3}
+  m_PrefabInstance: {fileID: 1772203784}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1527573058
 PrefabInstance:
