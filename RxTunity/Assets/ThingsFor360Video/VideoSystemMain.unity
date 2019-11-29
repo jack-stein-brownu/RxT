@@ -1452,6 +1452,26 @@ PrefabInstance:
       propertyPath: m_CastShadows
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -2700194178795864487, guid: 06df8c6827c8f4cf799f7478e481e5b6,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 159.15999
+      objectReference: {fileID: 0}
+    - target: {fileID: -8395144002639726196, guid: 06df8c6827c8f4cf799f7478e481e5b6,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 159.15999
+      objectReference: {fileID: 0}
+    - target: {fileID: -1424787860934052690, guid: 06df8c6827c8f4cf799f7478e481e5b6,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 159.15999
+      objectReference: {fileID: 0}
+    - target: {fileID: 8279220037933735926, guid: 06df8c6827c8f4cf799f7478e481e5b6,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 159.15999
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 06df8c6827c8f4cf799f7478e481e5b6, type: 3}
 --- !u!4 &1154029809 stripped
@@ -2091,7 +2111,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 447954, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.183
       objectReference: {fileID: 0}
     - target: {fileID: 447954, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2831,6 +2851,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: VideoSphere1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6894984237828538863, guid: dc4a1ef0fc9ba176295591a0a26cbf2b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6894984239518614579, guid: dc4a1ef0fc9ba176295591a0a26cbf2b,
         type: 3}
