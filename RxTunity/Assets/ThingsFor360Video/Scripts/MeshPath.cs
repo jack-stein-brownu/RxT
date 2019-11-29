@@ -20,17 +20,18 @@ public class MeshPath : MonoBehaviour
 
      private void OnTriggerEnter(Collider other)
     {   
+        if(other.tag == "Player"){
+         if(ClassPath.Forward){
 
-        if(ClassPath.Forward){
-            
-            ClassPath.ButtonMoveForward();
+               ClassPath.ButtonMoveForward();
 
-        }else{
+         }else{
 
-            ClassPath.ButtonMoveBackward();
+             ClassPath.ButtonMoveBackward();
+
+            }
 
         }
-
     }
     
 }
